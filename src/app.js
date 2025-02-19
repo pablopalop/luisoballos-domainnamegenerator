@@ -1,11 +1,17 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
+let domain = ['.com', '.net', '.tv', '.us']
+let numOfCombinations = 0
 
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (i in pronoun){
+  for (j in adj){
+    for (k in noun){
+      for (a in domain){
+        console.log(`${pronoun[i]}${adj[j]}${noun[k]}${domain[a]}`)
+        numOfCombinations++
+      }
+    }
+  }
+}
+console.log(`The number of combinations = ${numOfCombinations}`)

@@ -12,6 +12,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "node": "^23.8.0"
   }
 }
