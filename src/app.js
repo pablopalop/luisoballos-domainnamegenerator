@@ -1,15 +1,18 @@
-let pronoun = ['the', 'our'];
-let adj = ['great', 'big'];
-let noun = ['jogger', 'racoon'];
-let domain = ['.com', '.net', '.tv', '.us']
+const pronoun = ['the', 'our'];
+const adj = ['great', 'big'];
+const noun = ['jogger', 'racoon'];
+const domain = ['.com', '.net', '.tv', '.us']
 let numOfCombinations = 0
 
-for (i in pronoun){
-  for (j in adj){
-    for (k in noun){
-      for (a in domain){
-        console.log(`${pronoun[i]}${adj[j]}${noun[k]}${domain[a]}`)
-        numOfCombinations++
+const domainsGenerator = () => {
+  for (let i in pronoun){
+    for (let j in adj){
+      for (let k in noun){
+        for (let a in domain){
+          console.log(`${pronoun[i]}${adj[j]}${noun[k]}${domain[a]}`)
+          numOfCombinations++
+          
+        }
       }
     }
   }
